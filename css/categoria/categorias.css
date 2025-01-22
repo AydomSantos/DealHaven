@@ -26,6 +26,7 @@ body {
     align-items: center; 
     padding: 1rem;
     border-bottom: 1px solid #ddd; 
+   
 }
 
 /* Estilo do Logo no Cabeçalho */
@@ -43,17 +44,16 @@ body {
     border: 1px solid #ddd; 
     border-radius: 5px;
     text-decoration: none;
-    color: var(--secondary-color); 
+    
 }
 
 /* Botões de Login e Registro */
 .nav .nav__btn--login,
 .nav .nav__btn--register {
     padding: 0.8rem 4rem;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    margin-right: 1rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
 }
 
 /* Botão de Login */
