@@ -10,6 +10,7 @@
     integrity="sha512-valor_corretamente_verificado" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/home/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <title>Pagina Home</title>
 </head>
 
@@ -526,21 +527,51 @@
       <!-------------------------------------------------------->
     </main>
 
-    <footer>
-      <div>
-        <p>&copy; 2024 Sua Empresa. Todos os direitos reservados.</p>
-        <p>Contato: contato@suaempresa.com</p>
-        <p>Telefone: +55 (xx) xxxx-xxxx</p>
-        <nav>
-          <ul>
-            <li><a href="/sobre">Sobre nós</a></li>
-            <li>
-              <a href="/politica-de-privacidade">Política de Privacidade</a>
-            </li>
-            <li><a href="/termos-de-uso">Termos de Uso</a></li>
+    <footer class="footer">
+      <div class="footer__content">
+        <div class="footer__section">
+          <h3 class="footer__title">Navegação</h3>
+          <ul class="footer__links">
+            <li><a href="categorias.html" class="footer__link">Categorias</a></li>
+            <li><a href="pagina_faq.html" class="footer__link">FAQ</a></li>
           </ul>
-        </nav>
+        </div>
+    
+        <div class="footer__section">
+          <h3 class="footer__title">Contato</h3>
+          <div class="footer__contact">
+            <p>📞 (11) 9999-9999</p>
+            <p>✉️ contato@empresa.com</p>
+            <p>📍 São Paulo, SP</p>
+          </div>
+        </div>
+    
+        <div class="footer__section">
+          <h3 class="footer__title">Redes Sociais</h3>
+          <div class="footer__social">
+            <div class="footer__social">
+              <a href="#" class="footer__social-link" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="footer__social-link" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="footer__social-link" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="#" class="footer__social-link" aria-label="YouTube">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
+    
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2024 Empresa. Todos os direitos reservados.</p>
+      </div>
+    
+      <div class="back-to-top">↑</div>
     </footer>
 
   </div>
