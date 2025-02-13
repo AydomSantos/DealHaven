@@ -3,17 +3,28 @@ document.addEventListener("DOMContentLoaded", function () {
   const productsContainer = document.getElementById("products-container");
   const productItems = productsContainer.getElementsByClassName("product-item");
 
-  // Adiciona evento de filtro ao select de categoria
-  categoryFilter.addEventListener("change", function () {
-    const selectedCategory = categoryFilter.value;
+  // Função para filtrar produtos
+  const filterProducts = () => {
+    const selectedCategory = categoryFilter.value.trim().toLowerCase();
 
-    Array.from(productItems).forEach(function (item) {
-      // Verifica se a categoria selecionada corresponde ao data-category do item
-      if (selectedCategory === "Filtrar por Categoria" || item.getAttribute("data-category") === selectedCategory) {
-        item.style.display = "block"; // Mostra o item
-      } else {
-        item.style.display = "none"; // Oculta o item
-      }
+    Array.from(productItems).forEach(item => {
+      const itemCategory = item.dataset.category.trim().toLowerCase();
+      const showItem = selectedCategory === "" || 
+                      selectedCategory === "filtrar por categoria" || 
+                      itemCategory === selectedCategory.toLowerCase();
+
+      item.style.display = showItem ? "" : "none";
     });
-  });
+
+    // Forçar redesenho do layout
+    productsContainer.style.visibility = 'hidden';
+    productsContainer.offsetHeight; // Trigger reflow
+    productsContainer.style.visibility = 'visible';
+  };
+
+  // Event listeners
+  categoryFilter.addEventListener("change", filterProducts);
+  
+  // Filtro inicial
+  filterProducts();
 });
