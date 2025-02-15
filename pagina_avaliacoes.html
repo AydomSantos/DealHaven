@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/pagina_avaliacao/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-valor_corretamente_verificado" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Pagina de avaliações</title>
+</head>
+
+<body>
+
+    <div id="pagina__home">
+        <header class="header" style="background: linear-gradient(to right,  #2099f1, #133b76);">
+            <a href="index.html" class="header__logo">
+                <img src="img/home_img/logo/Logo_dois.png" alt="logo" width="150px">
+            </a>
+            <nav class="nav">
+                <a href="pagina_faq.html" class="nav__btn--faq btn" id="faq-link">FAQ</a>
+                <a href="categorias.html" class="nav__btn--categoria" id="categoria-link">Categorias de produtos</a>
+                <a href="login.html" class="nav__btn--login btn" id="login-link">Login</a>
+                <a href="pagina_de_registro.html" class="nav__btn--register btn" id="register-link">Register</a>
+            </nav>
+        </header>
+
+    </div>
+    <div class="product-container">
+        <h1>Avaliação do Produto</h1>
+        <div class="product">
+            <img src="img/home_img/produtos/aleatorios/TVlg.webp" alt="Imagem do Produto" class="product-image">
+            <p>LG Smart TV 55" 4K - HDR, Wi-Fi, Controle por Voz.</p>
+        </div>
+
+        <!-- Formulário de Avaliação -->
+        <div class="rating-section">
+            <h3>Deixe sua Avaliação</h3>
+            <form id="rating-form">
+                <label for="rating">Nota:</label>
+                <select id="rating" name="rating">
+                    <option value="1">1 estrela</option>
+                    <option value="2">2 estrelas</option>
+                    <option value="3">3 estrelas</option>
+                    <option value="4">4 estrelas</option>
+                    <option value="5">5 estrelas</option>
+                </select>
+                <br><br>
+                <label for="comment">Comentário:</label>
+                <textarea id="comment" name="comment" rows="4" placeholder="Deixe seu comentário..."></textarea>
+                <br><br>
+                <button type="submit">Enviar Avaliação</button>
+            </form>
+        </div>
+
+        <section class="comentarios" id="comentarios">
+
+            <div class="swiper review-slider">
+                <h1 class="titulo">
+                    Avaliações
+                </h1>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide">
+                        <p class="text">
+                            A TV LG 55" 4K tem uma qualidade de imagem incrível! A tecnologia HDR faz toda a diferença para assistir filmes e esportes. Além disso, o controle por voz é muito prático e facilita o dia a dia.
+                        </p>
+                        <div class="user">
+                            <div class="info">
+                                <h3>john deo</h3>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-alt"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="swiper-slide slide">
+                        <p class="text">
+                            A resolução 4K dessa TV é excelente! As cores são vibrantes, e o som também é muito bom. O design é elegante e fica ótimo na sala de estar. Vale o preço!
+                        </p>
+                        <div class="user">
+                            <div class="info">
+                                <h3>Maria</h3>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="swiper-slide slide">
+                        <p class="text">
+                            Comprei essa TV LG e estou impressionado com a qualidade de imagem. O processo de configuração foi bem fácil, e a integração com o Wi-Fi funciona perfeitamente. Uma das melhores compras que fiz!
+                        </p>
+                        <div class="user">
+                            <div class="info">
+                                <h3>Pedro</h3>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="swiper-slide slide">
+                        <p class="text">
+                            A TV é ótima, mas o controle por voz não funciona tão bem em ambientes mais ruidosos. Porém, a imagem e o som são de qualidade excepcional, então, no geral, estou satisfeito com a compra.
+                        </p>
+                        <div class="user">
+                            <div class="info">
+                                <h3>Duda</h3>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="swiper-slide slide">
+                        <p class="text">
+                            A LG 55" 4K é perfeita para quem adora assistir filmes e séries em alta definição. A TV tem uma ótima resposta de imagem, e o sistema de som não deixa a desejar. Super recomendo!
+                        </p>
+                        <div class="user">
+                            <div class="info">
+                                <h3>Marcos</h3>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="swiper-slide slide">
+                        <p class="text">
+                            A TV LG 55" 4K é fantástica! A qualidade de imagem é realmente impressionante, e o controle por voz facilita muito na hora de mudar canais ou procurar conteúdo. Vale a pena o investimento!
+                        </p>
+                        <div class="user">
+                            <div class="info">
+                                <h3>Kayene</h3>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </section>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__section">
+                <h3 class="footer__title">Navegação</h3>
+                <ul class="footer__links">
+                    <li><a href="categorias.html" class="footer__link">Categorias</a></li>
+                    <li><a href="pagina_faq.html" class="footer__link">FAQ</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__section">
+                <h3 class="footer__title">Contato</h3>
+                <div class="footer__contact">
+                    <p>📞 (11) 9999-9999</p>
+                    <p>✉️ contato@empresa.com</p>
+                    <p>📍 São Paulo, SP</p>
+                </div>
+            </div>
+
+            <div class="footer__section">
+                <h3 class="footer__title">Redes Sociais</h3>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="footer__social-link" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="footer__social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="footer__social-link" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <p class="footer__copy">&copy; 2024 Empresa. Todos os direitos reservados.</p>
+        </div>
+
+        <div class="back-to-top">↑</div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="js/home/home.js"></script>
+    <script type="module" src="/src/swiper/config.js"></script>
+</body>
+
+</html>
