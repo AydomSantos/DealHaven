@@ -1,0 +1,222 @@
+:root {
+    --max-width: 1200px;
+    --primary-color: #1875e8;
+    --secondary-color: #01080e;
+    --light-gray: #f7f7f7;
+    --white: #fff;
+    --border-radius: 12px;
+    --gradient-primary: linear-gradient(to right, #2099f1, #133b76);
+    --primary-hover: #1870c2;
+    --transition: all 0.3s ease;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Reset de Estilos Globais */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo do Body */
+  body {
+    background: #f8f9fa;
+    font-family: "Inter", sans-serif;
+
+  }
+  
+  /* ------------------------ HEADER ------------------------ */
+  
+  /* Estilos do Cabeçalho */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    z-index: 100000;
+    top: 0;
+    padding: 0 1rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  /* Estilo do Logo no Cabeçalho */
+  .header__logo {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  /* ------------------------ NAVIGATION ------------------------ */
+  
+  /* Estilos de Navegação */
+
+  .nav {
+    display: flex;
+    align-items: center;
+  }
+  .nav a {
+    padding: 0 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--secondary-color);
+    color: #ffff;
+    border: none;
+  }
+  
+  /* Botões de Login e Registro */
+  .nav .nav__btn--login,
+  .nav .nav__btn--register {
+    padding: 0.8rem 4rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Botão de Login */
+  .nav .nav__btn--login {
+    background-color: var(--primary-color);
+    color: var(--white);
+  }
+  
+  /* Botão de Registro */
+  .nav .nav__btn--register {
+    background-color: var(--secondary-color);
+    color: var(--white);
+  }
+  
+  /* Estilização do Formulário */
+form {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    margin-bottom: 3rem;
+}
+
+.form-label {
+    font-weight: 600;
+    color: #133b76;
+    margin-bottom: 0.5rem;
+}
+
+.form-control, .form-select {
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #2099f1;
+    box-shadow: 0 0 0 3px rgba(32, 153, 241, 0.2);
+}
+
+.input-group-text {
+    background-color: #e9ecef;
+    border: 2px solid #e9ecef;
+}
+
+/* Botão Personalizado */
+.btn-primary {
+    background: var(--gradient-primary);
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-primary:hover {
+    background: var(--primary-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(32, 153, 241, 0.3);
+}
+
+.btn-primary::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(255,255,255,0.1);
+    transform: rotate(45deg);
+    transition: all 0.5s ease;
+}
+
+.btn-primary:hover::after {
+    left: 50%;
+}
+
+/* Checkboxes Estilizados */
+.form-check-input {
+    width: 1.2em;
+    height: 1.2em;
+    margin-top: 0.15em;
+    border: 2px solid #dee2e6;
+}
+
+.form-check-input:checked {
+    background-color: #2099f1;
+    border-color: #2099f1;
+}
+
+/* Upload de Arquivo Estilizado */
+.form-control[type="file"] {
+    padding: 0.5rem;
+}
+
+.footer{
+    background: var(--gradient-primary) !important;
+    color: white !important;
+    margin-top: 4rem;
+}
+
+.footer .btn {
+    transition: all 0.3s ease;
+}
+
+.footer .btn:hover {
+    transform: translateY(-3px);
+    opacity: 0.9;
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    
+    .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+    
+    form {
+        padding: 1.5rem;
+    }
+    
+    .col-md-6, .col-md-4 {
+        margin-bottom: 1rem;
+    }
+    
+    .btn-primary {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .form-check-label {
+        font-size: 0.9rem;
+    }
+    
+    .footer .btn {
+        margin: 0.25rem;
+        padding: 0.5rem;
+    }
+}
